@@ -44,6 +44,7 @@ body {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -55,7 +56,7 @@ body {
     font-weight: bold;
     color: white;
     margin-bottom: 0.5rem;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header p {
@@ -87,9 +88,12 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0.5;
     }
@@ -110,6 +114,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -134,8 +139,13 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .welcome-message i {
@@ -147,9 +157,12 @@ body {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -179,6 +192,7 @@ body {
         opacity: 0;
         transform: translateX(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -246,7 +260,7 @@ body {
     border-left: 4px solid var(--primary);
     border-radius: 0.75rem;
     align-self: flex-start;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .sources-header {
@@ -396,17 +410,26 @@ input::placeholder {
     animation: typing 1.4s infinite ease-in-out;
 }
 
-.typing-dot:nth-child(1) { animation-delay: -0.32s; }
-.typing-dot:nth-child(2) { animation-delay: -0.16s; }
+.typing-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.typing-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
 
 @keyframes typing {
-    0%, 80%, 100% { 
-        transform: scale(0.6); 
-        opacity: 0.4; 
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0.6);
+        opacity: 0.4;
     }
-    40% { 
-        transform: scale(1); 
-        opacity: 1; 
+
+    40% {
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
@@ -433,24 +456,33 @@ input::placeholder {
     .header h1 {
         font-size: 2rem;
     }
-    
+
     .messages-area {
         height: 24rem;
     }
-    
+
     .user-message .message-content,
     .ai-message .message-content,
     .sources-box,
     .no-sources {
         max-width: 90%;
     }
-    
-    #sendText {
-        display: none;
-    }
-    
+
     .send-button {
         min-width: 60px;
         padding: 1rem;
     }
+}
+
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.875rem;
+    padding-bottom: 1rem;
+}
+
+.footer .author {
+    font-weight: 600;
+    color: white;
 }

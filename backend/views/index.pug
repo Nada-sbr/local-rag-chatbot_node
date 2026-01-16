@@ -1,7 +1,7 @@
 doctype html
 html(lang="fr")
     head
-        title 🧠 RAG Chat Bot - Ollama
+        title  RAG Chat Bot - Ollama
         link(rel="stylesheet", href="/styles.css")
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1")
@@ -11,7 +11,7 @@ html(lang="fr")
         .container
             // Header
             .header
-                h1 🧠 Assistant IA - RAG
+                h1 Assistant IA - RAG
                 p Recherche intelligente dans vos documents
                 .status-badge
                     .status-dot
@@ -38,6 +38,11 @@ html(lang="fr")
                         button#sendBtn.send-button
                             i#sendIcon.fas.fa-paper-plane
                             span#sendText Envoyer
+
+            // Footer
+            .footer
+                p Developed by 
+                    span.author Nada Saber
 
         // Scripts
         script(src="/app.js")
