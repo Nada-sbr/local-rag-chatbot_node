@@ -1,18 +1,19 @@
-# 🧠 RAG Chat Bot avec Ollama
+# RAG Chat Bot avec Ollama
 
 Un chatbot intelligent qui répond à vos questions en cherchant dans vos documents, **100% gratuit et local** grâce à Ollama.
 
-![RAG Chat Bot Demo](./backend/public/images/demo-screenshot.jpeg)
+<img width="1904" height="2007" alt="image" src="https://github.com/user-attachments/assets/5dc1b5cf-ffe1-4d4f-bc9d-5fd7c9af9c85" />
 
-## ✨ Fonctionnalités
 
-- 🤖 **IA Locale** : Utilise Ollama (Llama 3.2) - aucun coût, aucune limite
-- 🔍 **Recherche Sémantique** : Trouve les informations pertinentes dans vos documents
-- 📚 **Base Vectorielle** : Qdrant pour une recherche ultra-rapide
-- 🐳 **Docker** : Déploiement en un clic
-- 🔒 **Privé** : Vos données ne quittent jamais votre machine
+##  Fonctionnalités
 
-## 🚀 Démarrage rapide
+-  **IA Locale** : Utilise Ollama (Llama 3.2) - aucun coût, aucune limite
+-  **Recherche Sémantique** : Trouve les informations pertinentes dans vos documents
+-  **Base Vectorielle** : Qdrant pour une recherche ultra-rapide
+-  **Docker** : Déploiement en un clic
+-  **Privé** : Vos données ne quittent jamais votre machine
+
+##  Démarrage rapide
 
 ### 1. Prérequis
 - Docker & Docker Compose
@@ -46,7 +47,7 @@ docker compose exec nodeapp npm run index
 - **Chat** : http://localhost:3000
 - **Qdrant Dashboard** : http://localhost:6333/dashboard
 
-## 📂 Ajouter des documents au corpus
+##  Ajouter des documents au corpus
 
 1. Ajoutez vos fichiers `.json` dans `backend/corpus/`
 2. Format requis :
@@ -73,7 +74,7 @@ docker compose exec nodeapp npm run index
 - **Base Vectorielle** : Qdrant
 - **Conteneurisation** : Docker
 
-## 🎯 Architecture
+##  Architecture
 
 ```
 Question utilisateur
@@ -89,7 +90,7 @@ Génération de réponse (Llama 3.2)
 Affichage avec sources
 ```
 
-## 📊 Comparaison avec OpenAI
+##  Comparaison avec OpenAI
 
 | Critère | OpenAI | Ollama (ce projet) |
 |---------|--------|-------------------|
@@ -99,7 +100,7 @@ Affichage avec sources
 | Limites | Rate limits | **Aucune** |
 | Connexion | Internet requis | **Fonctionne hors ligne** |
 
-## 🔧 Commandes utiles
+##  Commandes utiles
 
 ```bash
 # Voir les logs
@@ -121,7 +122,7 @@ docker compose exec ollama ollama list
 docker compose exec ollama ollama pull <model-name>
 ```
 
-## 🐛 Dépannage
+##  Dépannage
 
 ### L'application ne trouve pas de résultats
 - Vérifiez que les documents sont bien indexés : `docker compose exec nodeapp npm run index`
@@ -135,11 +136,11 @@ docker compose exec ollama ollama pull <model-name>
 - Vérifiez que le conteneur Ollama est démarré : `docker compose ps`
 - Redémarrez : `docker compose restart ollama`
 
-## 📝 Licence
+##  Licence
 
 MIT - Voir [LICENSE](LICENSE)
 
-## 🙏 Crédits
+##  Crédits
 
 - [Ollama](https://ollama.ai/) - IA locale
 - [Qdrant](https://qdrant.tech/) - Base vectorielle
