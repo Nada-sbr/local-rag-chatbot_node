@@ -1,7 +1,8 @@
 # RAG Chat Bot avec Ollama
 
 Un chatbot intelligent qui répond à vos questions en cherchant dans vos documents, **100% gratuit et local** grâce à Ollama.
-<img width="1793" height="1787" alt="image" src="https://github.com/user-attachments/assets/2546c539-451d-4d69-a861-366119c264c2" />
+<img width="1789" height="1665" alt="image" src="https://github.com/user-attachments/assets/d29854d4-9594-49fd-9fc1-3972efdafcf3" />
+
 
 
 
